@@ -1,16 +1,21 @@
 def find_min_index(matrix):
-    min_value = float('inf')
-    min_row = -1
-    min_col = -1
+    try:    
+        min_value = float('inf')
+        min_row = -1
+        min_col = -1
 
-    for i, row in enumerate(matrix):
-        for j, value in enumerate(row):
-            if value < min_value:
-                min_value = value
-                min_row = i
-                min_col = j
+        for i, row in enumerate(matrix):
+            for j, value in enumerate(row):
+                if value < min_value:
+                    min_value = value
+                    min_row = i
+                    min_col = j
 
-    return min_row, min_col
+        return min_row, min_col 
+    except Exception as e:  
+        print(f"Произошла ошибка {e}")
+    finally: print("Поиск закончен")
+
 def find_max_index(matrix):
     max_value = float('-inf')
     max_row = -1

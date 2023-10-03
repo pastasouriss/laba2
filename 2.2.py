@@ -19,7 +19,7 @@ def check(val):
             print(f"В числе {count} разрядов")
         elif isinstance(val, str):
             print("Строка")
-            k = set(val)
+            k=set(val)
             new = dict.fromkeys(k, 0)
             for k in val:
                 new[k] += 1

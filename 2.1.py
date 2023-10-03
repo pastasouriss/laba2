@@ -10,4 +10,4 @@ try:
 except ValueError:
     print("Ошибка! Введите целое число.")
 finally:
-    print("До свидания!")
+    print("Bye!")
